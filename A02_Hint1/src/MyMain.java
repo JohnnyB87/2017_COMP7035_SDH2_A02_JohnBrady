@@ -21,6 +21,7 @@ public class MyMain {
         m2.addElement(0, 9);
         m2.addElement(1, 3);
         m2.addElement(2, 2);
+        //m2.addElement(2, 4);
 
         // m3 = [4,8,1,3,6,5,2,6]
         MyList<Integer> m3 = new MyDynamicList<Integer>();
@@ -97,6 +98,8 @@ public class MyMain {
         resI = ex.power(5, 2);
         System.out.println(resI);
 
+        resI = ex.power(5, 1);
+        System.out.println(resI);
         //----------------------------
         //5. We test lucas
         //----------------------------
@@ -109,6 +112,9 @@ public class MyMain {
         System.out.println(resI);
 
         resI = ex.lucas(15);
+        System.out.println(resI);
+
+        resI = ex.lucas(30);
         System.out.println(resI);
 
         //----------------------------

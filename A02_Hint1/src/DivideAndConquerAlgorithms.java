@@ -92,14 +92,14 @@ public class DivideAndConquerAlgorithms {
 	 */	
 	public boolean isReverse(MyList<Integer> m){
 
-		if(m.length()==0)
+		if(m.length()<2)
 			return true;
 		int num = m.getElement(0);
 		int next = m.getElement(1);
 		boolean isTrue = num >= next;
 		if(isTrue){
 			m.removeElement(0);
-			isReverse(m);
+			isTrue = isReverse(m);
 			m.addElement(0,num);
 		}
 		else
@@ -118,11 +118,13 @@ public class DivideAndConquerAlgorithms {
 	 */	
 	public int getNumAppearances(MyList<Integer> m, int n){
 		int count = 0;
-		int size = m.length();
-		if(size > 0)
-			for(int i=0; i<size;i++)
-				count = n == m.getElement(i) ? count + 1:count;
-		return count;
+		if(m.length() == 0)
+			return 0;
+		int num = m.getElement(0);
+		m.removeElement(0);
+		count = n == num ? getNumAppearances(m,n)+1 : getNumAppearances(m,n);
+		m.addElement(0,num);
+		return count ;
 	}
 	
 	//-------------------------------------------------------------------
@@ -136,7 +138,9 @@ public class DivideAndConquerAlgorithms {
 	 */	
 
 	public int power(int n, int m){
-		return (int)Math.pow(n, m);
+		if(m==0)
+			return 1;
+		return n * power(n,m-1);
 	}
 	
 	//-------------------------------------------------------------------
@@ -148,7 +152,11 @@ public class DivideAndConquerAlgorithms {
 	 * @return: The term being computed 
 	 */	
 	public int lucas(int n){
-		return -1;
+		if(n == 0)
+			return 2;
+		else if(n == 1)
+			return 1;
+		return lucas(n-1) + lucas(n-2);
 	}
 
 	//-------------------------------------------------------------------
@@ -163,10 +171,14 @@ public class DivideAndConquerAlgorithms {
 	 * @param n: The length of the desired pattern
 	 */	
 	public void drawImage(int n){
-//		String str = "";
-//		for(int i=n; i>0; i--)
-//			str += "*";
-//		str = str + "\n" + drawImage(n--);
+		if(n>0) {
+			drawImage(n-1);
+			String str = "";
+			for (int i = n; i > 0; i--)
+				str += "*";
+			System.out.println(str);
+
+		}
 	}
 		
 }
