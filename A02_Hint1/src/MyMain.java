@@ -21,7 +21,7 @@ public class MyMain {
         m2.addElement(0, 9);
         m2.addElement(1, 3);
         m2.addElement(2, 2);
-        //m2.addElement(2, 4);
+        m2.addElement(2, 4);
 
         // m3 = [4,8,1,3,6,5,2,6]
         MyList<Integer> m3 = new MyDynamicList<Integer>();

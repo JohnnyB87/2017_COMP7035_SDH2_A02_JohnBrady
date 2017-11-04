@@ -102,8 +102,6 @@ public class DivideAndConquerAlgorithms {
 			isTrue = isReverse(m);
 			m.addElement(0,num);
 		}
-		else
-			isTrue = false;
 		return isTrue;
 	}
 
