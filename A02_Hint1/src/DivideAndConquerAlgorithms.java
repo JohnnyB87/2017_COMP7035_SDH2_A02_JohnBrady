@@ -91,13 +91,12 @@ public class DivideAndConquerAlgorithms {
 	 * @return: Whether m is sorted in decreasing order or not.  
 	 */	
 	public boolean isReverse(MyList<Integer> m){
-
 		if(m.length()<2)
 			return true;
 		int num = m.getElement(0);
 		int next = m.getElement(1);
-		boolean isTrue = num >= next;
-		if(isTrue){
+		boolean isTrue;
+		if(isTrue = num >= next){
 			m.removeElement(0);
 			isTrue = isReverse(m);
 			m.addElement(0,num);
