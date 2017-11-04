@@ -117,7 +117,7 @@ public class DivideAndConquerAlgorithms {
 	 * @return: The amount of appearances of n into m  
 	 */	
 	public int getNumAppearances(MyList<Integer> m, int n){
-		int count = 0;
+		int count;
 		if(m.length() == 0)
 			return 0;
 		int num = m.getElement(0);
@@ -140,7 +140,7 @@ public class DivideAndConquerAlgorithms {
 	public int power(int n, int m){
 		if(m==0)
 			return 1;
-		return n * power(n,m-1);
+		return n * power(n,--m);
 	}
 	
 	//-------------------------------------------------------------------
