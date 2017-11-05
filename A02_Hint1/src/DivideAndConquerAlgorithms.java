@@ -114,12 +114,11 @@ public class DivideAndConquerAlgorithms {
 	 * @return: The amount of appearances of n into m  
 	 */	
 	public int getNumAppearances(MyList<Integer> m, int n){
-		int count;
 		if(m.length() == 0)
 			return 0;
 		int num = m.getElement(0);
 		m.removeElement(0);
-		count = n == num ? getNumAppearances(m,n)+1 : getNumAppearances(m,n);
+		int count = n == num ? getNumAppearances(m,n)+1 : getNumAppearances(m,n);
 		m.addElement(0,num);
 		return count ;
 	}
@@ -174,7 +173,6 @@ public class DivideAndConquerAlgorithms {
 			for (int i = n; i > 0; i--)
 				str += "*";
 			System.out.println(str);
-
 		}
 	}
 		
