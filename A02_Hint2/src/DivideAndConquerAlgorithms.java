@@ -220,8 +220,16 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		//Output Variable --> InitialValue
 		//-----------------------------
-		MyList<Integer> res = null;
-
+		MyList<Integer> res = m2;
+		int scenario = 0;
+		int sizeM1 = m1.length();
+		int sizeM2 = m2.length();
+		if((sizeM1 == 0 || sizeM2 == 0)&&count==0)
+			scenario = 1;
+		else if(sizeM1 == 0)
+			scenario = 2;
+//		else if(size == 0)
+//			scenario = 2;
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
@@ -229,14 +237,27 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
-		int scenario = 0;
+
 
 		//-----------------------------
 		// II. SCENARIO IMPLEMENTATION 
 		//-----------------------------
 
 		switch(scenario){
+			case 1:
+				res = sizeM1 == 0 ? m2:m1;
 
+				break;
+			case 2: count=0; break;
+			default:
+				count++;
+				int n = m1.getElement(0);
+
+				m1.removeElement(0);
+				res = concatenate(res,m1);
+				res.addElement(0,n);
+				m1.addElement(0,n);
+				break;
 		}
 
 		//-----------------------------

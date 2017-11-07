@@ -100,6 +100,17 @@ public class MyMain {
 		resM = ex.concatenate(m2, m3);
 		ex.recursiveDisplayElements(resM);
 
+		resM = ex.concatenate(m3, m2);
+		ex.recursiveDisplayElements(resM);
+
+		System.out.println("\n----------- Test: recursiveDisplayElements -------------\n");
+
+		ex.recursiveDisplayElements(m1);
+
+		ex.recursiveDisplayElements(m2);
+
+		ex.recursiveDisplayElements(m3);
+
 		//----------------------------
 		//5. We test quickSort
 		//----------------------------
