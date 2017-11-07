@@ -83,16 +83,16 @@ public class MyMain {
 		//4. We test concatenate
 		//----------------------------
 		System.out.println("\n----------- Test: concatenate -------------\n");
-		
+
 		resM = ex.concatenate(m1, m2);
 		ex.recursiveDisplayElements(resM);
-		
+
 		resM = ex.concatenate(m2, m1);
-		ex.recursiveDisplayElements(resM);		
-		
+		ex.recursiveDisplayElements(resM);
+
 		resM = ex.concatenate(m2, m3);
 		ex.recursiveDisplayElements(resM);
-		
+
 		//----------------------------
 		//5. We test quickSort
 		//----------------------------
@@ -100,7 +100,7 @@ public class MyMain {
 
 		resM = ex.quickSort(m1);
 		ex.recursiveDisplayElements(resM);
-		
+
 		resM = ex.quickSort(m2);
 		ex.recursiveDisplayElements(resM);
 
