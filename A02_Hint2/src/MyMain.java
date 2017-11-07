@@ -100,7 +100,7 @@ public class MyMain {
 		resM = ex.concatenate(m2, m3);
 		ex.recursiveDisplayElements(resM);
 
-		resM = ex.concatenate(m3, m2);
+		resM = ex.concatenate(m1, m1);
 		ex.recursiveDisplayElements(resM);
 
 		System.out.println("\n----------- Test: recursiveDisplayElements -------------\n");
