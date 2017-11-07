@@ -128,6 +128,14 @@ public class MyMain {
 
         ex.drawImage(5);
 
+        System.out.println("\n----------- Test: drawImage 2 -------------\n");
+
+        ex.drawImage2(1);
+        System.out.println("------");
+        ex.drawImage2(3);
+        System.out.println("------");
+        ex.drawImage2(5);
+
     }
 
     /**

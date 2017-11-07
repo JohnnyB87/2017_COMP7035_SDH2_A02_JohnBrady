@@ -175,5 +175,26 @@ public class DivideAndConquerAlgorithms {
 			System.out.println(str);
 		}
 	}
+	private int row = 1;
+	private int star = 1;
+
+
+	public void drawImage2(int n){
+		if(n>0) {
+
+			if (star > row) {
+				star = 1;
+				row++;
+				System.out.println("");
+			}
+			if(row > n){
+				row = 1;
+				return;
+			}
+			System.out.print("*");
+			star++;
+			drawImage2(n);
+		}
+	}
 		
 }
