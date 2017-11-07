@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d21aaa6-6319-497c-9911-b166a6065a30" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/A02_Hint2/DivideAndConquerAlgorithms.class" afterPath="$PROJECT_DIR$/out/production/A02_Hint2/DivideAndConquerAlgorithms.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/A02_Hint2/MyMain.class" afterPath="$PROJECT_DIR$/out/production/A02_Hint2/MyMain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java" afterPath="$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyMain.java" afterPath="$PROJECT_DIR$/src/MyMain.java" />
@@ -26,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DivideAndConquerAlgorithms.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DivideAndConquerAlgorithms.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="99" column="44" lean-forward="false" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
+            <state relative-caret-position="-2840">
+              <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
               <folding>
                 <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
               </folding>
@@ -38,14 +40,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+            <state relative-caret-position="390">
+              <caret line="99" column="34" lean-forward="true" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
               <folding>
-                <element signature="e#3152#3153#0" expanded="true" />
-                <element signature="e#3166#3167#0" expanded="true" />
+                <element signature="e#3315#3316#0" expanded="true" />
+                <element signature="e#3329#3330#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,8 +73,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MyMain.java" />
         <option value="$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java" />
+        <option value="$PROJECT_DIR$/src/MyMain.java" />
       </list>
     </option>
   </component>
@@ -266,7 +268,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510020093428</updated>
-      <workItem from="1510020096299" duration="2910000" />
+      <workItem from="1510020096299" duration="3207000" />
     </task>
     <task id="LOCAL-00001" summary="finally back to square 1">
       <created>1510020358926</created>
@@ -289,11 +291,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510021200680</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added in counter to display items in a cleaner fashion">
+      <created>1510070801876</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1510070801876</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2910000" />
+    <option name="totallyTimeSpent" value="3207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -341,7 +350,8 @@
     <MESSAGE value="finally back to square 1" />
     <MESSAGE value="found most up to date file" />
     <MESSAGE value="test first 3 methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="test first 3 methods" />
+    <MESSAGE value="added in counter to display items in a cleaner fashion" />
+    <option name="LAST_COMMIT_MESSAGE" value="added in counter to display items in a cleaner fashion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -366,23 +376,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyMain.java">
+    <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        <state relative-caret-position="-2840">
+          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
           <folding>
-            <element signature="e#3152#3153#0" expanded="true" />
-            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
+    <entry file="file://$PROJECT_DIR$/src/MyMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="99" column="44" lean-forward="false" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
+        <state relative-caret-position="390">
+          <caret line="99" column="34" lean-forward="true" selection-start-line="99" selection-start-column="34" selection-end-line="99" selection-end-column="34" />
           <folding>
-            <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
+            <element signature="e#3315#3316#0" expanded="true" />
+            <element signature="e#3329#3330#0" expanded="true" />
           </folding>
         </state>
       </provider>

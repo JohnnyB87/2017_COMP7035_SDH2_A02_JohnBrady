@@ -90,12 +90,10 @@ public class DivideAndConquerAlgorithms {
 				this.count = 0;
 				break;
 			default:
-				int n = this.count;
 				if(this.count == 0)
 					System.out.printf("MyList Contains the following %d item%s:%n",size,size ==1 ? "" : "'s");
-				count++;
 				Integer i = m.getElement(0);
-				System.out.printf("Item %d: %d%n",n,i);
+				System.out.printf("Item %d: %d%n",this.count++,i);
 				m.removeElement(0);
 				recursiveDisplayElements(m);
 				m.addElement(0,i);

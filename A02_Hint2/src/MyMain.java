@@ -38,7 +38,12 @@ public class MyMain {
 		
 		//---------------------
 		// TESTS
-		//---------------------		
+		//---------------------
+
+		//----------------------------
+		//0. We test iterativeDisplayElements
+		//----------------------------
+		System.out.println("\n----------- Test: iterativeDisplayElements -------------\n");
 		ex.iterativeDisplayElements(m1);
 		ex.iterativeDisplayElements(m2);
 		ex.iterativeDisplayElements(m3);
@@ -84,20 +89,20 @@ public class MyMain {
 		//----------------------------
 		//4. We test concatenate
 		//----------------------------
-//		System.out.println("\n----------- Test: concatenate -------------\n");
-//
-//		resM = ex.concatenate(m1, m2);
-//		ex.recursiveDisplayElements(resM);
-//
-//		resM = ex.concatenate(m2, m1);
-//		ex.recursiveDisplayElements(resM);
-//
-//		resM = ex.concatenate(m2, m3);
-//		ex.recursiveDisplayElements(resM);
-//
-//		//----------------------------
-//		//5. We test quickSort
-//		//----------------------------
+		System.out.println("\n----------- Test: concatenate -------------\n");
+
+		resM = ex.concatenate(m1, m2);
+		ex.recursiveDisplayElements(resM);
+
+		resM = ex.concatenate(m2, m1);
+		ex.recursiveDisplayElements(resM);
+
+		resM = ex.concatenate(m2, m3);
+		ex.recursiveDisplayElements(resM);
+
+		//----------------------------
+		//5. We test quickSort
+		//----------------------------
 //		System.out.println("\n----------- Test: quickSort -------------\n");
 //
 //		resM = ex.quickSort(m1);
