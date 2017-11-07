@@ -114,16 +114,16 @@ public class MyMain {
 		//----------------------------
 		//5. We test quickSort
 		//----------------------------
-//		System.out.println("\n----------- Test: quickSort -------------\n");
-//
-//		resM = ex.quickSort(m1);
-//		ex.recursiveDisplayElements(resM);
-//
-//		resM = ex.quickSort(m2);
-//		ex.recursiveDisplayElements(resM);
-//
-//		resM = ex.quickSort(m3);
-//		ex.recursiveDisplayElements(resM);
+		System.out.println("\n----------- Test: quickSort -------------\n");
+
+		resM = ex.quickSort(m1);
+		ex.recursiveDisplayElements(resM);
+
+		resM = ex.quickSort(m2);
+		ex.recursiveDisplayElements(resM);
+
+		resM = ex.quickSort(m3);
+		ex.recursiveDisplayElements(resM);
 
 	}
 	
