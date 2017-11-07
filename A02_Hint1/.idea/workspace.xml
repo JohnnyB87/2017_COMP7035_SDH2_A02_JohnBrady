@@ -2,6 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c1998c-c5ca-4705-bfd9-a9c55294bffe" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../.idea/2017_COMP7035_SDH2_A02_JohnBrady.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/DivideAndConquerAlgorithms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/MyDynamicList.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/MyList.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/MyMain.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/MyNode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/MyStaticList.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/allclasses-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/allclasses-noframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/class-use/DivideAndConquerAlgorithms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/class-use/MyDynamicList.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/class-use/MyList.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/class-use/MyMain.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/class-use/MyNode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/class-use/MyStaticList.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/constant-values.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/deprecated-list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/help-doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/index-files/index-1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/index-files/index-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/index-files/index-3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/index-files/index-4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/index-files/index-5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/index-files/index-6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/index-files/index-7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/overview-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/package-frame.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/package-list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/package-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/package-tree.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/package-use.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/doc/stylesheet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/src/DivideAndConquerAlgorithms.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/src/MyDynamicList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/src/MyList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/src/MyMain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/src/MyNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../A02_Hint2/src/MyStaticList.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="$PROJECT_DIR$/../.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,26 +55,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyMain.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+            <state relative-caret-position="371">
+              <caret line="138" column="5" lean-forward="true" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
               <folding>
                 <element signature="e#440#449#0" expanded="true" />
                 <element signature="e#524#533#0" expanded="true" />
                 <element signature="e#736#745#0" expanded="true" />
-                <element signature="e#3984#3985#0" expanded="true" />
-                <element signature="e#4006#4007#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DivideAndConquerAlgorithms.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DivideAndConquerAlgorithms.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="2295">
               <caret line="178" column="12" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
               <folding>
                 <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
@@ -87,9 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -107,12 +144,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -243,7 +283,8 @@
       <updated>1509738759115</updated>
       <workItem from="1509738760420" duration="4452000" />
       <workItem from="1509797194956" duration="1286000" />
-      <workItem from="1509809222263" duration="14400000" />
+      <workItem from="1509809222263" duration="14882000" />
+      <workItem from="1510018626048" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="connected IntelliJ to github">
       <created>1509798460084</created>
@@ -284,7 +325,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20138000" />
+    <option name="totallyTimeSpent" value="20639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -296,9 +337,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33297643" sideWeight="0.539666" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33297643" sideWeight="0.54384136" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33297643" sideWeight="0.46033403" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33297643" sideWeight="0.45615867" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38494167" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -342,14 +383,34 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MyMain.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding>
+            <element signature="e#440#449#0" expanded="true" />
+            <element signature="e#524#533#0" expanded="true" />
+            <element signature="e#736#745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="178" column="12" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
+          <folding>
+            <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyMain.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2312">
           <caret line="136" column="42" lean-forward="false" selection-start-line="136" selection-start-column="42" selection-end-line="136" selection-end-column="42" />
           <folding>
             <element signature="e#440#449#0" expanded="true" />
             <element signature="e#524#533#0" expanded="true" />
             <element signature="e#736#745#0" expanded="true" />
-            <element signature="e#3984#3985#0" expanded="true" />
-            <element signature="e#4006#4007#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -372,8 +433,6 @@
             <element signature="e#440#449#0" expanded="true" />
             <element signature="e#524#533#0" expanded="true" />
             <element signature="e#736#745#0" expanded="true" />
-            <element signature="e#3984#3985#0" expanded="true" />
-            <element signature="e#4006#4007#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -418,26 +477,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyMain.java">
+    <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        <state relative-caret-position="2295">
+          <caret line="178" column="12" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
           <folding>
-            <element signature="e#440#449#0" expanded="true" />
-            <element signature="e#524#533#0" expanded="true" />
-            <element signature="e#736#745#0" expanded="true" />
-            <element signature="e#3984#3985#0" expanded="true" />
-            <element signature="e#4006#4007#0" expanded="true" />
+            <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
+    <entry file="file://$PROJECT_DIR$/src/MyMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="178" column="12" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
+        <state relative-caret-position="371">
+          <caret line="138" column="5" lean-forward="true" selection-start-line="138" selection-start-column="5" selection-end-line="138" selection-end-column="5" />
           <folding>
-            <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
+            <element signature="e#440#449#0" expanded="true" />
+            <element signature="e#524#533#0" expanded="true" />
+            <element signature="e#736#745#0" expanded="true" />
           </folding>
         </state>
       </provider>
