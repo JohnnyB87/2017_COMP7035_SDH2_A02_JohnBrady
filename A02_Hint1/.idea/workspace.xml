@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1c1998c-c5ca-4705-bfd9-a9c55294bffe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/A02_Hint1/DivideAndConquerAlgorithms.class" afterPath="$PROJECT_DIR$/out/production/A02_Hint1/DivideAndConquerAlgorithms.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/A02_Hint1/MyMain.class" afterPath="$PROJECT_DIR$/out/production/A02_Hint1/MyMain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java" afterPath="$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyMain.java" afterPath="$PROJECT_DIR$/src/MyMain.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +32,7 @@
       <file leaf-file-name="DivideAndConquerAlgorithms.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
+            <state relative-caret-position="193">
               <caret line="178" column="12" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
               <folding>
                 <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
@@ -247,7 +243,7 @@
       <updated>1509738759115</updated>
       <workItem from="1509738760420" duration="4452000" />
       <workItem from="1509797194956" duration="1286000" />
-      <workItem from="1509809222263" duration="14339000" />
+      <workItem from="1509809222263" duration="14400000" />
     </task>
     <task id="LOCAL-00001" summary="connected IntelliJ to github">
       <created>1509798460084</created>
@@ -277,11 +273,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509915842210</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added second drawImage method: drawImage2()">
+      <created>1510013366480</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1510013366480</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20077000" />
+    <option name="totallyTimeSpent" value="20138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -327,7 +330,8 @@
     <MESSAGE value="removed redundant else statement in isReverse()" />
     <MESSAGE value="tidied isReverse()" />
     <MESSAGE value="cleaned code" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned code" />
+    <MESSAGE value="added second drawImage method: drawImage2()" />
+    <option name="LAST_COMMIT_MESSAGE" value="added second drawImage method: drawImage2()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -430,7 +434,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
+        <state relative-caret-position="193">
           <caret line="178" column="12" lean-forward="false" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
           <folding>
             <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
