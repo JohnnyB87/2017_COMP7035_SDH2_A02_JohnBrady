@@ -273,11 +273,25 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
-		int middle;
-		int scenario = 0;
+
 		int mSize = m.length();
-		if(mSize >= 1)
+		int pivot = 0;
+		int left = 0;
+		int middle = 0;
+		int right = 0;
+		int scenario = 0;
+		if(mSize > 1) {
 			scenario = 1;
+			pivot = mSize/2;
+			left = m.getElement(0);
+			middle = m.getElement(pivot);
+			if(mSize > 2) {
+				scenario = 2;
+				right = m.getElement(pivot + 1);
+			}
+		}
+		else if(mSize == 1)
+			scenario = 3;
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
@@ -289,21 +303,38 @@ public class DivideAndConquerAlgorithms {
 
 		switch(scenario){
 			case 1:
-				middle = (m.length())/2;
-				int n = m.getElement(middle);
 				int o = m.getElement(0);
-				if(o > n){
-					int t = o;
-					o = n;
-					n = t;
+				if(left > middle){
+					int t = middle;
+					middle = left;
+					left = t;
 				}
 
 				m.removeElement(0);
 				res = quickSort(m);
-				res.addElement(0,o);
+				res.addElement(0,left);
 				m.addElement(0,o);
 				break;
-				default: res = new MyDynamicList<>();break;
+			case 2:
+				o = m.getElement(0);
+				if(left > middle){
+					int t = middle;
+					middle = left;
+					left = t;
+				}
+				if(right < middle){
+					int t = middle;
+					middle = right;
+					right = t;
+				}
+				m.removeElement(0);
+				res = quickSort(m);
+				res.addElement(0,left);
+				res.addElement(mSize-1,right);
+
+				m.addElement(0,o);
+				break;
+			default: res = new MyDynamicList<>();break;
 		}
 
 		//-----------------------------
