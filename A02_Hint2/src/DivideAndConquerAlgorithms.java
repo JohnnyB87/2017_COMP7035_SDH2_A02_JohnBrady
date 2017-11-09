@@ -269,29 +269,16 @@ public class DivideAndConquerAlgorithms {
 		//Output Variable --> InitialValue
 		//-----------------------------
 		MyList<Integer> res = null;
-
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
 
-		int mSize = m.length();
-		int pivot = 0;
-		int left = 0;
-		int middle = 0;
-		int right = 0;
+		int mSize = m == null ? 0 : m.length();
 		int scenario = 0;
-		if(mSize > 1) {
+		if(mSize == 0)
 			scenario = 1;
-			pivot = mSize/2;
-			left = m.getElement(0);
-			middle = m.getElement(pivot);
-			if(mSize > 2) {
-				scenario = 2;
-				right = m.getElement(pivot + 1);
-			}
-		}
 		else if(mSize == 1)
-			scenario = 3;
+			scenario = 2;
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
@@ -303,38 +290,52 @@ public class DivideAndConquerAlgorithms {
 
 		switch(scenario){
 			case 1:
-				int o = m.getElement(0);
-				if(left > middle){
-					int t = middle;
-					middle = left;
-					left = t;
-				}
-
-				m.removeElement(0);
-				res = quickSort(m);
-				res.addElement(0,left);
-				m.addElement(0,o);
+				res = new MyDynamicList<>();
 				break;
 			case 2:
-				o = m.getElement(0);
-				if(left > middle){
-					int t = middle;
-					middle = left;
-					left = t;
-				}
-				if(right < middle){
-					int t = middle;
-					middle = right;
-					right = t;
-				}
-				m.removeElement(0);
-				res = quickSort(m);
-				res.addElement(0,left);
-				res.addElement(mSize-1,right);
-
-				m.addElement(0,o);
+				res = new MyDynamicList<>();
+				int n = m.getElement(0);
+				res.addElement(0,n);
 				break;
-			default: res = new MyDynamicList<>();break;
+			default:
+				int pivot = mSize-1;
+				int low = 0;
+				int high = mSize-2;
+				int cl = 0;
+				int cr = 0;
+				int p = m.getElement(pivot);
+
+				while(low <= high){
+					int left;
+					int right;
+					while(low <= mSize-1 && m.getElement(low) < p ){
+						low++;
+					}
+					while(high >= 0 && m.getElement(high) > p){
+						high--;
+					}
+					if(low <= high){
+						int i = m.getElement(low);
+						int j = m.getElement(high);
+						m.removeElement(low);
+						m.addElement(low,j);
+						m.removeElement(high);
+						m.addElement(high,i);
+						low++;
+						high--;
+					}
+					else
+						p = high < 0 || low < p ? m.getElement(low) : m.getElement(high);
+				}
+
+
+				MyList<Integer> l = smallerMyList(m,p);
+				MyList<Integer> r = biggerEqualMyList(m,p);
+
+				l = quickSort(l);
+				r = quickSort(r);
+				res = concatenate(l,r);
+				break;
 		}
 
 		//-----------------------------
