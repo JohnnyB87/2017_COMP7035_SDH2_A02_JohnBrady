@@ -321,6 +321,11 @@ public class DivideAndConquerAlgorithms {
 						low++;
 						high--;
 					}
+					else if ((low >= pivot && high > pivot)
+                            || (low < pivot && high <= pivot)) {
+					    pivot = (low+high)/2;
+					    p = m.getElement(pivot);
+                    }
 				}
 
                 m.removeElement(pivot);

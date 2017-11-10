@@ -45,8 +45,8 @@
       <file leaf-file-name="DivideAndConquerAlgorithms.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="309" column="63" lean-forward="false" selection-start-line="309" selection-start-column="63" selection-end-line="309" selection-end-column="63" />
+            <state relative-caret-position="430">
+              <caret line="324" column="54" lean-forward="false" selection-start-line="324" selection-start-column="54" selection-end-line="324" selection-end-column="54" />
               <folding>
                 <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
               </folding>
@@ -278,7 +278,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510020093428</updated>
-      <workItem from="1510020096299" duration="34941000" />
+      <workItem from="1510020096299" duration="35539000" />
     </task>
     <task id="LOCAL-00001" summary="finally back to square 1">
       <created>1510020358926</created>
@@ -343,11 +343,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510262323634</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="quicksort() getting there">
+      <created>1510272018451</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1510272018451</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34941000" />
+    <option name="totallyTimeSpent" value="35539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -401,7 +408,8 @@
     <MESSAGE value="completed concatenate()" />
     <MESSAGE value="started quicksort()" />
     <MESSAGE value="quicksort() updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="quicksort() updated" />
+    <MESSAGE value="quicksort() getting there" />
+    <option name="LAST_COMMIT_MESSAGE" value="quicksort() getting there" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -463,8 +471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="309" column="63" lean-forward="false" selection-start-line="309" selection-start-column="63" selection-end-line="309" selection-end-column="63" />
+        <state relative-caret-position="430">
+          <caret line="324" column="54" lean-forward="false" selection-start-line="324" selection-start-column="54" selection-end-line="324" selection-end-column="54" />
           <folding>
             <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
           </folding>
