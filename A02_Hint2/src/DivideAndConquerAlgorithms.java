@@ -1,6 +1,6 @@
 
 /**
- * The class contains the Divide and Conquer-based Algorithms we are using. 
+ * The class contains the Divide and Conquer-based Algorithms we are using.
  */
 public class DivideAndConquerAlgorithms {
 
@@ -8,18 +8,18 @@ public class DivideAndConquerAlgorithms {
 
 	//----------------------------------------------
 	// Class constructor
-	//----------------------------------------------	
+	//----------------------------------------------
 	/**
 	 * Constructor of the class. Do not edit it.
 	 */
 	public DivideAndConquerAlgorithms(){}
 
 	//-------------------------------------------------------------------
-	// 0. iterativeDisplayElements --> Displays all elements of a MyList 
-	//-------------------------------------------------------------------	
+	// 0. iterativeDisplayElements --> Displays all elements of a MyList
+	//-------------------------------------------------------------------
 	/**
 	 * Given a concrete MyList, this iterative algorithm displays its elements by screen (if any).
-	 * @param m: The MyList we want to display its elements.	  
+	 * @param m: The MyList we want to display its elements.
 	 */
 	public void iterativeDisplayElements(MyList<Integer> m){
 		//-----------------------------
@@ -39,7 +39,7 @@ public class DivideAndConquerAlgorithms {
 			scenario = 2;
 
 		//-----------------------------
-		// II. SCENARIO IMPLEMENTATION 
+		// II. SCENARIO IMPLEMENTATION
 		//-----------------------------
 		switch(scenario){
 
@@ -67,11 +67,11 @@ public class DivideAndConquerAlgorithms {
 	}
 
 	//-------------------------------------------------------------------
-	// 1. recursiveDisplayElements --> Displays all elements of a MyList  
-	//-------------------------------------------------------------------	
+	// 1. recursiveDisplayElements --> Displays all elements of a MyList
+	//-------------------------------------------------------------------
 	/**
 	 * Given a concrete MyList, this recursive algorithm displays its elements by screen (if any).
-	 * @param m: The MyList we want to display its elements.	  
+	 * @param m: The MyList we want to display its elements.
 	 */
 	public void recursiveDisplayElements(MyList<Integer> m){
 
@@ -167,7 +167,7 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		//Output Variable --> InitialValue
 		//-----------------------------
-		MyList<Integer> res = new MyDynamicList<>();;
+		MyList<Integer> res = new MyDynamicList<>();
 
 		//-----------------------------
 		//SET OF OPS
@@ -203,15 +203,15 @@ public class DivideAndConquerAlgorithms {
 
 		//-----------------------------
 		//Output Variable --> Return FinalValue
-		//-----------------------------		
+		//-----------------------------
 		return res;
 	}
 
 	//-------------------------------------------------------------------
-	// 3. concatenate --> It concatenates 2 MyList   
-	//-------------------------------------------------------------------	
+	// 3. concatenate --> It concatenates 2 MyList
+	//-------------------------------------------------------------------
 	/**
-	 * The function concatenates the content of 2 MyList.   
+	 * The function concatenates the content of 2 MyList.
 	 * @param m1: The first MyList.
 	 * @param m2: The second MyList.
 	 * @return: The new MyList resulting of concatenate the other 2 MyList
@@ -252,17 +252,17 @@ public class DivideAndConquerAlgorithms {
 
 		//-----------------------------
 		//Output Variable --> Return FinalValue
-		//-----------------------------		
+		//-----------------------------
 		return res;
 	}
 
 	//-------------------------------------------------------------------
 	// 4. quickSort --> Sort a MyList using the method quick sort
-	//-------------------------------------------------------------------	
+	//-------------------------------------------------------------------
 	/**
 	 * Given a concrete MyList, it computes a new sorted list using the method Quick Sort.
 	 * @param m: The MyList we want to sort.
-	 * @return: The new MyList being sorted.	  	  
+	 * @return: The new MyList being sorted.
 	 */
 	public MyList<Integer> quickSort(MyList<Integer> m){
 		//-----------------------------
@@ -285,7 +285,7 @@ public class DivideAndConquerAlgorithms {
 
 
 		//-----------------------------
-		// II. SCENARIO IMPLEMENTATION 
+		// II. SCENARIO IMPLEMENTATION
 		//-----------------------------
 
 		switch(scenario){
@@ -303,7 +303,7 @@ public class DivideAndConquerAlgorithms {
 				int high = mSize-1;
 				int p = m.getElement(pivot);
 
-				while(low < pivot && high > pivot){
+				while(low < pivot && high >= pivot){
 					while(low < pivot && m.getElement(low) < p ){
 						low++;
 					}
@@ -321,18 +321,23 @@ public class DivideAndConquerAlgorithms {
 						low++;
 						high--;
 					}
-					else if ((low >= pivot && high > pivot)
-                            || (low < pivot && high <= pivot)) {
-					    pivot = (low+high)/2;
-					    p = m.getElement(pivot);
-                    }
+					else if ((low == pivot && high > pivot)) {
+						m.removeElement(pivot++);
+						m.addElement(pivot,p);
+          }
+          else if(low < pivot && high == pivot){
+            m.removeElement(pivot--);
+            m.addElement(pivot,p);
+          }
 				}
 
-                m.removeElement(pivot);
+        m.removeElement(pivot);
 
 				MyList<Integer> l = smallerMyList(m,p);
 				MyList<Integer> r = biggerEqualMyList(m,p);
-                m.addElement(pivot,p);
+
+        m.addElement(pivot,p);
+
 				l = quickSort(l);
 				r = quickSort(r);
 
@@ -343,7 +348,68 @@ public class DivideAndConquerAlgorithms {
 
 		//-----------------------------
 		//Output Variable --> Return FinalValue
-		//-----------------------------		
+		//-----------------------------
+		return res;
+	}
+
+	public MyList<Integer> quickSort2(MyList<Integer> m){
+		//-----------------------------
+		//Output Variable --> InitialValue
+		//-----------------------------
+		MyList<Integer> res = null;
+		//-----------------------------
+		//SET OF OPS
+		//-----------------------------
+
+		int mSize = m == null ? 0 : m.length();
+		int scenario = 0;
+		if(mSize == 0)
+			scenario = 1;
+		else if(mSize == 1)
+			scenario = 2;
+		//-----------------------------
+		// I. SCENARIO IDENTIFICATION
+		//-----------------------------
+
+
+		//-----------------------------
+		// II. SCENARIO IMPLEMENTATION
+		//-----------------------------
+
+		switch(scenario){
+			case 1:
+				res = new MyDynamicList<>();
+				break;
+			case 2:
+				res = new MyDynamicList<>();
+				int n = m.getElement(0);
+				res.addElement(0,n);
+				break;
+			default:
+				int pivot = mSize/2;
+				int p = m.getElement(pivot);
+
+				m.removeElement(pivot);
+
+				MyList<Integer> l = smallerMyList(m,p);
+				MyList<Integer> r = biggerEqualMyList(m,p);
+
+				m.addElement(pivot,p);
+
+				l = quickSort(l);
+				r = quickSort(r);
+
+				MyList<Integer> piv = new MyDynamicList<>();
+				piv.addElement(0,p);
+
+				res = concatenate(l,piv);
+				res = concatenate(res,r);
+				break;
+		}
+
+		//-----------------------------
+		//Output Variable --> Return FinalValue
+		//-----------------------------
 		return res;
 	}
 

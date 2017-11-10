@@ -35,7 +35,7 @@ public class MyMain {
 		
 		//3. We create extra variables for the results		
 		MyList<Integer> resM = null;
-		
+		MyList<Integer> resM2 = null;
 		//---------------------
 		// TESTS
 		//---------------------
@@ -100,6 +100,9 @@ public class MyMain {
 		resM = ex.concatenate(m2, m3);
 		ex.recursiveDisplayElements(resM);
 
+		resM2 = ex.concatenate(m2, m3);
+		ex.recursiveDisplayElements(resM);
+
 		resM = ex.concatenate(m1, m1);
 		ex.recursiveDisplayElements(resM);
 
@@ -116,15 +119,83 @@ public class MyMain {
 		//----------------------------
 		System.out.println("\n----------- Test: quickSort -------------\n");
 
-		resM = ex.quickSort(m1);
+		resM = ex.quickSort2(m1);
 		ex.recursiveDisplayElements(resM);
 
-		resM = ex.quickSort(m2);
+		resM = ex.quickSort2(m2);
 		ex.recursiveDisplayElements(resM);
 
-		resM = ex.quickSort(m3);
+		resM = ex.quickSort2(m3);
 		ex.recursiveDisplayElements(resM);
 
+		resM = ex.quickSort2(resM2);
+		ex.recursiveDisplayElements(resM);
+
+		MyList<Integer> m4 = new MyDynamicList<>();
+		
+		m4.addElement(0,9);
+		m4.addElement(1,9);
+		m4.addElement(2,8);
+		m4.addElement(3,8);
+		m4.addElement(4,7);
+		m4.addElement(5,7);
+		m4.addElement(6,6);
+		m4.addElement(7,6);
+		m4.addElement(8,7);
+		m4.addElement(9,7);
+		m4.addElement(10,8);
+		m4.addElement(11,8);
+		m4.addElement(12,9);
+		m4.addElement(13,9);
+
+		long start = System.currentTimeMillis();
+
+		resM = ex.quickSort2(m4);
+		ex.recursiveDisplayElements(resM);
+
+		long end = System.currentTimeMillis();
+		System.out.println("Time: " + (end-start)/1000.0);
+
+		MyList<Integer> m5 = new MyDynamicList<>();
+		m5.addElement(0,0);
+		m5.addElement(1,1);
+		m5.addElement(2,2);
+		m5.addElement(3,3);
+		m5.addElement(4,4);
+		m5.addElement(5,5);
+		m5.addElement(6,6);
+		m5.addElement(7,7);
+		m5.addElement(8,8);
+		m5.addElement(9,9);
+		m5.addElement(10,10);
+
+		start = System.currentTimeMillis();
+		resM = ex.quickSort2(m5);
+		ex.recursiveDisplayElements(resM);
+
+		end = System.currentTimeMillis();
+		System.out.println("Time: " + (end-start)/1000.0);
+
+		MyList<Integer> m6 = new MyDynamicList<>();
+		m6.addElement(0,10);
+		m6.addElement(1,9);
+		m6.addElement(2,8);
+		m6.addElement(3,7);
+		m6.addElement(4,6);
+		m6.addElement(5,5);
+		m6.addElement(6,4);
+		m6.addElement(7,3);
+		m6.addElement(8,2);
+		m6.addElement(9,1);
+		m6.addElement(10,0);
+
+		start = System.currentTimeMillis();
+
+		resM = ex.quickSort2(m6);
+		ex.recursiveDisplayElements(resM);
+
+		end = System.currentTimeMillis();
+		System.out.println("Time: " + (end-start)/1000.0);
 	}
 	
 	/**
