@@ -298,23 +298,20 @@ public class DivideAndConquerAlgorithms {
 				res.addElement(0,n);
 				break;
 			default:
-				int pivot = mSize-1;
+				int pivot = mSize/2;
 				int low = 0;
-				int high = mSize-2;
-				int cl = 0;
-				int cr = 0;
+				int high = mSize-1;
 				int p = m.getElement(pivot);
 
-				while(low <= high){
-					int left;
-					int right;
-					while(low <= mSize-1 && m.getElement(low) < p ){
+				while(low < pivot && high > pivot){
+					while(low < pivot && m.getElement(low) < p ){
 						low++;
 					}
-					while(high >= 0 && m.getElement(high) > p){
+					while(high > pivot && m.getElement(high) >= p){
 						high--;
 					}
-					if(low <= high){
+
+					if(low < pivot && high > pivot){
 						int i = m.getElement(low);
 						int j = m.getElement(high);
 						m.removeElement(low);
@@ -324,17 +321,18 @@ public class DivideAndConquerAlgorithms {
 						low++;
 						high--;
 					}
-					else
-						p = high < 0 || low < p ? m.getElement(low) : m.getElement(high);
 				}
 
+                m.removeElement(pivot);
 
 				MyList<Integer> l = smallerMyList(m,p);
 				MyList<Integer> r = biggerEqualMyList(m,p);
-
+                m.addElement(pivot,p);
 				l = quickSort(l);
 				r = quickSort(r);
+
 				res = concatenate(l,r);
+				res.addElement(pivot,p);
 				break;
 		}
 
