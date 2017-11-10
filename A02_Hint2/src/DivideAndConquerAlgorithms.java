@@ -78,8 +78,8 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
-		int size = m.length();
-		int scenario = size;
+		int mSize = m == null ? 0 : m.length();
+		int scenario = mSize;
 		//-----------------------------
 		// II. SCENARIO IMPLEMENTATION
 		//-----------------------------
@@ -91,7 +91,7 @@ public class DivideAndConquerAlgorithms {
 				break;
 			default:
 				if(this.count == 0)
-					System.out.printf("MyList Contains the following %d item%s:%n", size, size == 1 ? "" : "'s");
+					System.out.printf("MyList Contains the following %d item%s:%n", mSize, mSize == 1 ? "" : "'s");
 				Integer i = m.getElement(0);
 				System.out.printf("Item %d: %d%n",this.count++,i);
 				m.removeElement(0);
@@ -114,18 +114,19 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		//Output Variable --> InitialValue
 		//-----------------------------
-		MyList<Integer> res = new MyDynamicList<>();
+		MyList<Integer> res;
 
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
-
+		int i=0;
+		int scenario = 0;
+		int mSize = m == null ? 0 : m.length();
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
-		int i=0;
-		int scenario = 0;
-		if(m.length() > 0) {
+
+		if(mSize > 0) {
 			i = m.getElement(0);
 			scenario = i < e ? 2 : 1;
 		}
@@ -145,7 +146,7 @@ public class DivideAndConquerAlgorithms {
 				res.addElement(0,i);
 				m.addElement(0,i);
 				break;
-			default: break;
+			default: res = new MyDynamicList<>(); break;
 		}
 
 		//-----------------------------
@@ -167,18 +168,19 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		//Output Variable --> InitialValue
 		//-----------------------------
-		MyList<Integer> res = new MyDynamicList<>();
+		MyList<Integer> res;
 
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
-
+		int i = 0;
+		int scenario = 0;
+		int mSize = m == null ? 0 : m.length();
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
-		int i=0;
-		int scenario = 0;
-		if(m.length() > 0) {
+
+		if(mSize > 0) {
 			i = m.getElement(0);
 			scenario = i >= e ? 2 : 1;
 		}
@@ -187,18 +189,19 @@ public class DivideAndConquerAlgorithms {
 		// II. SCENARIO IMPLEMENTATION
 		//-----------------------------
 		switch(scenario){
-			case 0: break;
+
 			case 1:
 				m.removeElement(0);
 				res = biggerEqualMyList(m,e);
 				m.addElement(0,i);
 				break;
-			default:
+			case 2:
 				m.removeElement(0);
 				res = biggerEqualMyList(m,e);
 				res.addElement(0,i);
 				m.addElement(0,i);
 				break;
+			default: res = new MyDynamicList<>(); break;
 		}
 
 		//-----------------------------
@@ -221,9 +224,17 @@ public class DivideAndConquerAlgorithms {
 		//Output Variable --> InitialValue
 		//-----------------------------
 		MyList<Integer> res;
+
+		//-----------------------------
+		// I. SCENARIO IDENTIFICATION
+		//-----------------------------
 		int scenario = 0;
-		int m1Size = m1.length();
-		int m2Size = m2.length();
+		int m1Size = m1 == null ? 0 : m1.length();
+		int m2Size = m2 == null ? 0 : m2.length();
+
+		//-----------------------------
+		// II. SCENARIO IMPLEMENTATION
+		//-----------------------------
 		if(m1Size >= 0 && m2Size >= 0){
 			if(m1Size > 0)
 				scenario = 1;
@@ -268,17 +279,17 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		//Output Variable --> InitialValue
 		//-----------------------------
-		MyList<Integer> res = null;
+		MyList<Integer> res;
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
 
 		int mSize = m == null ? 0 : m.length();
-		int scenario = mSize;
+		int scenario;
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
-
+		scenario = mSize;
 
 		//-----------------------------
 		// II. SCENARIO IMPLEMENTATION
@@ -323,31 +334,28 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		//Output Variable --> InitialValue
 		//-----------------------------
-		MyList<Integer> res = null;
+		MyList<Integer> res;
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
 
 		int mSize = m == null ? 0 : m.length();
-		int scenario = 0;
-		if(mSize == 0)
-			scenario = 1;
-		else if(mSize == 1)
-			scenario = 2;
+		int scenario;
+
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
-
+		scenario = mSize;
 
 		//-----------------------------
 		// II. SCENARIO IMPLEMENTATION
 		//-----------------------------
 
 		switch(scenario){
-			case 1:
+			case 0:
 				res = new MyDynamicList<>();
 				break;
-			case 2:
+			case 1:
 				res = new MyDynamicList<>();
 				int n = m.getElement(0);
 				res.addElement(0,n);
@@ -387,16 +395,8 @@ public class DivideAndConquerAlgorithms {
 				}
 
 				m.removeElement(pivot);
-
-				MyList<Integer> l = smallerMyList(m,p);
-				MyList<Integer> r = biggerEqualMyList(m,p);
-
+				res = quickSort2(m);
 				m.addElement(pivot,p);
-
-				l = quickSort2(l);
-				r = quickSort2(r);
-
-				res = concatenate(l,r);
 				res.addElement(pivot,p);
 				break;
 		}
