@@ -274,6 +274,61 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 
 		int mSize = m == null ? 0 : m.length();
+		int scenario = mSize;
+		//-----------------------------
+		// I. SCENARIO IDENTIFICATION
+		//-----------------------------
+
+
+		//-----------------------------
+		// II. SCENARIO IMPLEMENTATION
+		//-----------------------------
+
+		switch(scenario){
+			case 0:
+				res = new MyDynamicList<>();
+				break;
+			case 1:
+				res = new MyDynamicList<>();
+				int n = m.getElement(0);
+				res.addElement(0,n);
+				break;
+			default:
+				int pivot = mSize/2;
+				int p = m.getElement(pivot);
+
+				m.removeElement(pivot);
+
+				MyList<Integer> l = smallerMyList(m,p);
+				MyList<Integer> r = biggerEqualMyList(m,p);
+
+				m.addElement(pivot,p);
+
+				l = quickSort(l);
+				r = quickSort(r);
+
+				r.addElement(0,p);
+
+				res = concatenate(l,r);
+				break;
+		}
+
+		//-----------------------------
+		//Output Variable --> Return FinalValue
+		//-----------------------------
+		return res;
+	}
+
+	public MyList<Integer> quickSort2(MyList<Integer> m){
+		//-----------------------------
+		//Output Variable --> InitialValue
+		//-----------------------------
+		MyList<Integer> res = null;
+		//-----------------------------
+		//SET OF OPS
+		//-----------------------------
+
+		int mSize = m == null ? 0 : m.length();
 		int scenario = 0;
 		if(mSize == 0)
 			scenario = 1;
@@ -324,22 +379,22 @@ public class DivideAndConquerAlgorithms {
 					else if ((low == pivot && high > pivot)) {
 						m.removeElement(pivot++);
 						m.addElement(pivot,p);
-          }
-          else if(low < pivot && high == pivot){
-            m.removeElement(pivot--);
-            m.addElement(pivot,p);
-          }
+					}
+					else if(low < pivot && high == pivot){
+						m.removeElement(pivot--);
+						m.addElement(pivot,p);
+					}
 				}
 
-        m.removeElement(pivot);
+				m.removeElement(pivot);
 
 				MyList<Integer> l = smallerMyList(m,p);
 				MyList<Integer> r = biggerEqualMyList(m,p);
 
-        m.addElement(pivot,p);
+				m.addElement(pivot,p);
 
-				l = quickSort(l);
-				r = quickSort(r);
+				l = quickSort2(l);
+				r = quickSort2(r);
 
 				res = concatenate(l,r);
 				res.addElement(pivot,p);
@@ -351,66 +406,4 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		return res;
 	}
-
-	public MyList<Integer> quickSort2(MyList<Integer> m){
-		//-----------------------------
-		//Output Variable --> InitialValue
-		//-----------------------------
-		MyList<Integer> res = null;
-		//-----------------------------
-		//SET OF OPS
-		//-----------------------------
-
-		int mSize = m == null ? 0 : m.length();
-		int scenario = 0;
-		if(mSize == 0)
-			scenario = 1;
-		else if(mSize == 1)
-			scenario = 2;
-		//-----------------------------
-		// I. SCENARIO IDENTIFICATION
-		//-----------------------------
-
-
-		//-----------------------------
-		// II. SCENARIO IMPLEMENTATION
-		//-----------------------------
-
-		switch(scenario){
-			case 1:
-				res = new MyDynamicList<>();
-				break;
-			case 2:
-				res = new MyDynamicList<>();
-				int n = m.getElement(0);
-				res.addElement(0,n);
-				break;
-			default:
-				int pivot = mSize/2;
-				int p = m.getElement(pivot);
-
-				m.removeElement(pivot);
-
-				MyList<Integer> l = smallerMyList(m,p);
-				MyList<Integer> r = biggerEqualMyList(m,p);
-
-				m.addElement(pivot,p);
-
-				l = quickSort(l);
-				r = quickSort(r);
-
-				MyList<Integer> piv = new MyDynamicList<>();
-				piv.addElement(0,p);
-
-				res = concatenate(l,piv);
-				res = concatenate(res,r);
-				break;
-		}
-
-		//-----------------------------
-		//Output Variable --> Return FinalValue
-		//-----------------------------
-		return res;
-	}
-
 }

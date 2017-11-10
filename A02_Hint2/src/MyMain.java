@@ -119,16 +119,16 @@ public class MyMain {
 		//----------------------------
 		System.out.println("\n----------- Test: quickSort -------------\n");
 
-		resM = ex.quickSort2(m1);
+		resM = ex.quickSort(m1);
 		ex.recursiveDisplayElements(resM);
 
-		resM = ex.quickSort2(m2);
+		resM = ex.quickSort(m2);
 		ex.recursiveDisplayElements(resM);
 
-		resM = ex.quickSort2(m3);
+		resM = ex.quickSort(m3);
 		ex.recursiveDisplayElements(resM);
 
-		resM = ex.quickSort2(resM2);
+		resM = ex.quickSort(resM2);
 		ex.recursiveDisplayElements(resM);
 
 		MyList<Integer> m4 = new MyDynamicList<>();
@@ -150,7 +150,7 @@ public class MyMain {
 
 		long start = System.currentTimeMillis();
 
-		resM = ex.quickSort2(m4);
+		resM = ex.quickSort(m4);
 		ex.recursiveDisplayElements(resM);
 
 		long end = System.currentTimeMillis();
@@ -170,7 +170,7 @@ public class MyMain {
 		m5.addElement(10,10);
 
 		start = System.currentTimeMillis();
-		resM = ex.quickSort2(m5);
+		resM = ex.quickSort(m5);
 		ex.recursiveDisplayElements(resM);
 
 		end = System.currentTimeMillis();
@@ -191,7 +191,7 @@ public class MyMain {
 
 		start = System.currentTimeMillis();
 
-		resM = ex.quickSort2(m6);
+		resM = ex.quickSort(m6);
 		ex.recursiveDisplayElements(resM);
 
 		end = System.currentTimeMillis();
