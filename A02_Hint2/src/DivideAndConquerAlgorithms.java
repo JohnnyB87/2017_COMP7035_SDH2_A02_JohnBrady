@@ -366,7 +366,7 @@ public class DivideAndConquerAlgorithms {
 				int high = mSize-1;
 				int p = m.getElement(pivot);
 
-				while(low < pivot && high >= pivot){
+				while(low < pivot && high > pivot){
 					while(low < pivot && m.getElement(low) < p ){
 						low++;
 					}
