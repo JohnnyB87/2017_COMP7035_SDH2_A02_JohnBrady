@@ -91,7 +91,7 @@ public class DivideAndConquerAlgorithms {
 				break;
 			default:
 				if(this.count == 0)
-					System.out.printf("MyList Contains the following %d item%s:%n",size,size ==1 ? "" : "'s");
+					System.out.printf("MyList Contains the following %d item%s:%n", size, size == 1 ? "" : "'s");
 				Integer i = m.getElement(0);
 				System.out.printf("Item %d: %d%n",this.count++,i);
 				m.removeElement(0);
