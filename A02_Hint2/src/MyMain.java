@@ -197,6 +197,9 @@ public class MyMain {
 		end = System.currentTimeMillis();
 		System.out.println("Time: " + (end-start)/1000.0);
 
+		//----------------------------
+		//6. We test quickSort2
+		//----------------------------
 		System.out.println("\n----------- Test: quickSort2 -------------\n");
 
 		resM = ex.quickSort2(m1);
@@ -236,12 +239,28 @@ public class MyMain {
 
 		end = System.currentTimeMillis();
 		System.out.println("Time: " + (end-start)/1000.0);
+		//----------------------------
+		//7. We test null Array
+		//----------------------------
+
+		System.out.println("\n----------- Test is array is null -------------\n");
 
 		MyList m7 = null;
 		resM = ex.quickSort(m7);
 		ex.recursiveDisplayElements(resM);
+
 		resM = ex.concatenate(m6,m7);
 		ex.recursiveDisplayElements(resM);
+
+		ex.recursiveDisplayElements(m7);
+
+		resM = ex.smallerMyList(m7,5);
+		ex.recursiveDisplayElements(resM);
+
+		resM = ex.biggerEqualMyList(m7,5);
+		ex.recursiveDisplayElements(resM);
+
+
 	}
 	
 	/**
