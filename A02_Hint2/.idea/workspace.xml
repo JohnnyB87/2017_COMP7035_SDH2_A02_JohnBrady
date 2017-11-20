@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d21aaa6-6319-497c-9911-b166a6065a30" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java" afterPath="$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java" />
     </list>
@@ -47,8 +46,8 @@
       <file leaf-file-name="DivideAndConquerAlgorithms.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+            <state relative-caret-position="442">
+              <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
               <folding>
                 <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
               </folding>
@@ -102,7 +101,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -432,7 +431,7 @@
       <updated>1510020093428</updated>
       <workItem from="1510020096299" duration="38198000" />
       <workItem from="1510326408339" duration="6531000" />
-      <workItem from="1511210532572" duration="619000" />
+      <workItem from="1511210532572" duration="809000" />
     </task>
     <task id="LOCAL-00001" summary="finally back to square 1">
       <created>1510020358926</created>
@@ -546,14 +545,21 @@
       <option name="project" value="LOCAL" />
       <updated>1510405391039</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="removed instance variable in recursiveDisplayElements()">
+      <created>1511211190552</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1511211190552</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46159000" />
+    <option name="totallyTimeSpent" value="46349000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -565,7 +571,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2916225" sideWeight="0.30989584" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31919405" sideWeight="0.48385417" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2916225" sideWeight="0.6901042" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2916225" sideWeight="0.6901042" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -618,7 +624,8 @@
     <MESSAGE value="updated quicksort() adds pivot to start of r array instead of the end of the l array. This avoids having to call the length method on l" />
     <MESSAGE value="Fixed so it won't throw errors if array is null" />
     <MESSAGE value="tidied code" />
-    <option name="LAST_COMMIT_MESSAGE" value="tidied code" />
+    <MESSAGE value="removed instance variable in recursiveDisplayElements()" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed instance variable in recursiveDisplayElements()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1104,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DivideAndConquerAlgorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+        <state relative-caret-position="442">
+          <caret line="96" column="16" lean-forward="false" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
           <folding>
             <element signature="method#iterativeDisplayElements#0;class#DivideAndConquerAlgorithms#0" expanded="false" />
           </folding>

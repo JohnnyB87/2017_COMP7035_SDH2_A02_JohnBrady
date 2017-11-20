@@ -94,6 +94,7 @@ public class DivideAndConquerAlgorithms {
 
 				m.removeElement(0);
 				recursiveDisplayElements(m);
+				
 				System.out.printf("Item %d: %d%n",mSize-1,i);
 				m.addElement(0,i);
 				break;
