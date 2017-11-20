@@ -4,8 +4,6 @@
  */
 public class DivideAndConquerAlgorithms {
 
-	private int count = 0;
-
 	//----------------------------------------------
 	// Class constructor
 	//----------------------------------------------
@@ -78,24 +76,25 @@ public class DivideAndConquerAlgorithms {
 		//-----------------------------
 		// I. SCENARIO IDENTIFICATION
 		//-----------------------------
-		int mSize = m == null ? 0 : m.length();
+		int mSize = m == null ? -1 : m.length();
 		int scenario = mSize;
 		//-----------------------------
 		// II. SCENARIO IMPLEMENTATION
 		//-----------------------------
 		switch(scenario){
+			case -1:
+				System.out.println("Empty List");
+			break;
 			case 0:
-				if(this.count == 0)
-					System.out.println("Empty List");
-				this.count = 0;
+				//System.out.printf("MyList Contains the following %d item%s:%n", mSize, mSize == 1 ? "" : "'s");
 				break;
 			default:
-				if(this.count == 0)
-					System.out.printf("MyList Contains the following %d item%s:%n", mSize, mSize == 1 ? "" : "'s");
+
 				Integer i = m.getElement(0);
-				System.out.printf("Item %d: %d%n",this.count++,i);
+
 				m.removeElement(0);
 				recursiveDisplayElements(m);
+				System.out.printf("Item %d: %d%n",mSize-1,i);
 				m.addElement(0,i);
 				break;
 		}
