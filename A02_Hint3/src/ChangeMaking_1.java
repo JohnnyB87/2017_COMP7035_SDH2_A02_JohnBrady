@@ -274,8 +274,4 @@ public class ChangeMaking_1 {
 		return res;		
 	}
 
-
-	public void testMethodForIntelliJ(){
-
-	}
 }
