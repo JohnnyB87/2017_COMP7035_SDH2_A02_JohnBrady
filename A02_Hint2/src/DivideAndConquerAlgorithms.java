@@ -87,7 +87,7 @@ public class DivideAndConquerAlgorithms {
 				System.out.println("Empty List");
 				break;
 			case 1:
-				System.out.printf("Item %d: %d%n",mSize-1,m.getElement(0));
+				System.out.printf("Item 0: %d%n",m.getElement(0));
 				break;
 			default:
 
