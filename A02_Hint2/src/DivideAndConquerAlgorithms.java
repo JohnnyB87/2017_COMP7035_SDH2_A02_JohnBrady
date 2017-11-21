@@ -90,7 +90,6 @@ public class DivideAndConquerAlgorithms {
 				System.out.printf("Item 0: %d%n",m.getElement(0));
 				break;
 			default:
-
 				Integer i = m.getElement(0);
 
 				m.removeElement(0);
