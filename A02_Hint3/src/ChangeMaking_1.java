@@ -92,22 +92,8 @@ public class ChangeMaking_1 {
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
-		int dSize = discarded.length();
-		int i=0;
-		int j=0;
+		res = discarded.length();
 
-		if(dSize == 0)
-			return 0;
-		while( i-1 < dSize){
-			if(discarded.getElement(i-1) == coinValues.getElement(j))
-				i++;
-			else
-				res = j;
-			j++;
-		}
-
-
-		
 		//-----------------------------
 		//Output Variable --> Return FinalValue
 		//-----------------------------		
@@ -178,9 +164,9 @@ public class ChangeMaking_1 {
 //		int moneyNeeded = amount - changeGenerated;
 		int cSize = coinValues.length();
 		int index;
-		while((index = getCandidate(changeGenerated,discarded,coinValues)) < cSize && res) {
+		while((index = getCandidate(changeGenerated,discarded,coinValues)) < cSize && res && discarded.length() < cSize) {
 //			int value = coinValues.getElement(index);
-			if(!isValid(coinValues,amount,changeGenerated,index))
+			if(isValid(coinValues,amount,changeGenerated,index) == false)
 				discarded.addElement(discarded.length(), coinValues.getElement(index));
 			else
 				res = false;
@@ -248,25 +234,28 @@ public class ChangeMaking_1 {
 		//Output Variable --> InitialValue
 		//-----------------------------
 		MyList<Integer> res = null;
-		MyList<Integer> solutionValue = new MyDynamicList<>();
-		MyList<Integer> discarded = new MyDynamicList<>();
+		MyList<Integer> solutionValue = null;
 
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
+		solutionValue = new MyDynamicList<>();
+		MyList<Integer> discarded = new MyDynamicList<>();
 		int changeGenerated = 0;
 		while(!isFinal(changeGenerated,discarded,coinValues,amount)){
 			int index = getCandidate(changeGenerated,discarded,coinValues);
 			int value = coinValues.getElement(index);
 
-			if(isValid(coinValues,amount,changeGenerated + value,index)){
+			if(isValid(coinValues,amount,changeGenerated,index)){
 				solutionValue.addElement(solutionValue.length(), value);
 				changeGenerated += value;
 			}
 			else
 				discarded.addElement(0,value);
 		}
-
+		for(int k=0; k<solutionValue.length();k++){
+			System.out.println(k + " : " + solutionValue.getElement(k));
+		}
 		res = getQuality(solutionValue,changeGenerated,amount);
 		//-----------------------------
 		//Output Variable --> Return FinalValue

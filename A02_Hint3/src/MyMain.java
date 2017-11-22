@@ -35,12 +35,15 @@ public class MyMain {
 		ChangeMaking_1 ex1 = new ChangeMaking_1();
 				
 		resM = ex1.solve(m1, 36);
+		//ex1.displayElements(resM);
 		System.out.println();
 		
 		resM = ex1.solve(m2, 36);
+		ex1.displayElements(resM);
 		System.out.println();
 
 		resM = ex1.solve(m2, 58);
+		ex1.displayElements(resM);
 		System.out.println();
 		
 		System.out.println();		
@@ -53,12 +56,15 @@ public class MyMain {
 		ChangeMaking_2 ex2 = new ChangeMaking_2();
 				
 		resM = ex2.solve(m1, 36);
+		//ex2.displayElements(resM);
 		System.out.println();
 		
 		resM = ex2.solve(m2, 36);
+		ex2.displayElements(resM);
 		System.out.println();
 
 		resM = ex2.solve(m2, 58);
+		ex2.displayElements(resM);
 		System.out.println();
 		
 		System.out.println();		

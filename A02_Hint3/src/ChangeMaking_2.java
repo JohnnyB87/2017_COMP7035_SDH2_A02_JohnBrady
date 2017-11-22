@@ -92,8 +92,22 @@ public class ChangeMaking_2 {
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
+		int dSize = discarded.length();
+		int cSize = coinValues.length();
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+		for(int di=0; di<dSize; di++){
+			int n = discarded.getElement(di);
+			min = min > n ? n : min;
+		}
 
-		
+		for(int ci=0; ci<cSize; ci++){
+			int n = coinValues.getElement(ci);
+			if(n < min && n > max){
+				max = n;
+				res = ci;
+			}
+		}
 		//-----------------------------
 		//Output Variable --> Return FinalValue
 		//-----------------------------		
@@ -126,7 +140,11 @@ public class ChangeMaking_2 {
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
-
+		int moneyNeeded = amount - changeGenerated;
+		if(itemSelected == -1)
+			return false;
+		int value = coinValues.getElement(itemSelected);
+		res = moneyNeeded < value ? false : true;
 					
 		//-----------------------------
 		//Output Variable --> Return FinalValue
@@ -159,7 +177,17 @@ public class ChangeMaking_2 {
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
+		int cSize = coinValues.length();
+		int index;
 
+		while((index = getCandidate(changeGenerated,discarded,coinValues)) < cSize && res && discarded.length() < cSize) {
+//			int value = coinValues.getElement(index);
+			if(!isValid(coinValues,amount,changeGenerated,index))
+				discarded.addElement(discarded.length(), coinValues.getElement(index));
+			else
+				res = false;
+
+		}
 		
 		//-----------------------------
 		//Output Variable --> Return FinalValue
@@ -193,6 +221,11 @@ public class ChangeMaking_2 {
 		//SET OF OPS
 		//-----------------------------
 
+		int noOfCoins = sol.length();
+		int diff = amount - changeGenerated;
+		res = new MyDynamicList<>();
+		res.addElement(0,noOfCoins);
+		res.addElement(1,diff);
 		
 		//-----------------------------
 		//Output Variable --> Return FinalValue
@@ -211,6 +244,10 @@ public class ChangeMaking_2 {
 	 * @return: A MyList containing the amount of coins of each type being selected.
 	 */	
 	public MyList<Integer> solve(MyList<Integer> coinValues, int amount){
+
+		if(coinValues == null || coinValues.length()==0)
+			return null;
+
 		//-----------------------------
 		//Output Variable --> InitialValue
 		//-----------------------------
@@ -220,7 +257,24 @@ public class ChangeMaking_2 {
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
+		solutionValue = new MyDynamicList<>();
+		MyList<Integer> discarded = new MyDynamicList<>();
+		int changeGenerated = 0;
+		while(!isFinal(changeGenerated,discarded,coinValues,amount)){
+			int index = getCandidate(changeGenerated,discarded,coinValues);
+			int value = coinValues.getElement(index);
 
+			if(isValid(coinValues,amount,changeGenerated,index)){
+				solutionValue.addElement(solutionValue.length(), value);
+				changeGenerated += value;
+			}
+			else
+				discarded.addElement(0,value);
+		}
+		for(int k=0; k<solutionValue.length();k++){
+			System.out.println(k + " : " + solutionValue.getElement(k));
+		}
+		res = getQuality(solutionValue,changeGenerated,amount);
 		
 		//-----------------------------
 		//Output Variable --> Return FinalValue
