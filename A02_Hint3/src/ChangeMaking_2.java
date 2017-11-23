@@ -95,11 +95,12 @@ public class ChangeMaking_2 {
 		int dSize = discarded.length();
 		int cSize = coinValues.length();
 		int max = Integer.MIN_VALUE;
-		int min = Integer.MAX_VALUE;
-		for(int di=0; di<dSize; di++){
-			int n = discarded.getElement(di);
-			min = min > n ? n : min;
-		}
+		int min = dSize == 0 ? Integer.MAX_VALUE : discarded.getElement(dSize-1);
+//		int min = Integer.MAX_VALUE;
+//		for(int di=0; di<dSize; di++){
+//			int n = discarded.getElement(di);
+//			min = min > n ? n : min;
+//		}
 
 		for(int ci=0; ci<cSize; ci++){
 			int n = coinValues.getElement(ci);
