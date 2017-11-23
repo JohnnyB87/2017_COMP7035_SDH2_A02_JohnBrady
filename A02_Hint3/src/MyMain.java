@@ -39,11 +39,11 @@ public class MyMain {
 		System.out.println();
 		
 		resM = ex1.solve(m2, 36);
-		ex1.displayElements(resM);
+		//ex1.displayElements(resM);
 		System.out.println();
 
 		resM = ex1.solve(m2, 58);
-		ex1.displayElements(resM);
+		//ex1.displayElements(resM);
 		System.out.println();
 		
 		System.out.println();		
@@ -60,11 +60,11 @@ public class MyMain {
 		System.out.println();
 		
 		resM = ex2.solve(m2, 36);
-		ex2.displayElements(resM);
+		//ex2.displayElements(resM);
 		System.out.println();
 
 		resM = ex2.solve(m2, 58);
-		ex2.displayElements(resM);
+		//ex2.displayElements(resM);
 		System.out.println();
 		
 		System.out.println();		

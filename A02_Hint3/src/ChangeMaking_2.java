@@ -182,7 +182,6 @@ public class ChangeMaking_2 {
 		int index;
 
 		while((index = getCandidate(changeGenerated,discarded,coinValues)) < cSize && res && discarded.length() < cSize) {
-//			int value = coinValues.getElement(index);
 			if(!isValid(coinValues,amount,changeGenerated,index))
 				discarded.addElement(discarded.length(), coinValues.getElement(index));
 			else
@@ -276,7 +275,8 @@ public class ChangeMaking_2 {
 			System.out.println(k + " : " + solutionValue.getElement(k));
 		}
 		res = getQuality(solutionValue,changeGenerated,amount);
-		
+
+        displayElements(res);
 		//-----------------------------
 		//Output Variable --> Return FinalValue
 		//-----------------------------		
