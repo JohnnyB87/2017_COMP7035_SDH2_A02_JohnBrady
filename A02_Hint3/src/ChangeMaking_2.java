@@ -96,11 +96,6 @@ public class ChangeMaking_2 {
 		int cSize = coinValues.length();
 		int max = Integer.MIN_VALUE;
 		int min = dSize == 0 ? Integer.MAX_VALUE : discarded.getElement(dSize-1);
-//		int min = Integer.MAX_VALUE;
-//		for(int di=0; di<dSize; di++){
-//			int n = discarded.getElement(di);
-//			min = min > n ? n : min;
-//		}
 
 		for(int ci=0; ci<cSize; ci++){
 			int n = coinValues.getElement(ci);
@@ -109,6 +104,8 @@ public class ChangeMaking_2 {
 				res = ci;
 			}
 		}
+
+
 		//-----------------------------
 		//Output Variable --> Return FinalValue
 		//-----------------------------		
@@ -178,17 +175,9 @@ public class ChangeMaking_2 {
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
-		int cSize = coinValues.length();
-		int index;
 
-		while((index = getCandidate(changeGenerated,discarded,coinValues)) < cSize && res && discarded.length() < cSize) {
-			if(!isValid(coinValues,amount,changeGenerated,index))
-				discarded.addElement(discarded.length(), coinValues.getElement(index));
-			else
-				res = false;
+		res = discarded.length() == coinValues.length() || changeGenerated == amount;
 
-		}
-		
 		//-----------------------------
 		//Output Variable --> Return FinalValue
 		//-----------------------------		
@@ -269,7 +258,7 @@ public class ChangeMaking_2 {
 				changeGenerated += value;
 			}
 			else
-				discarded.addElement(0,value);
+				discarded.addElement(discarded.length(),value);
 		}
 		for(int k=0; k<solutionValue.length();k++){
 			System.out.println(k + " : " + solutionValue.getElement(k));
@@ -277,6 +266,7 @@ public class ChangeMaking_2 {
 		res = getQuality(solutionValue,changeGenerated,amount);
 
         displayElements(res);
+		displayElements(discarded);
 		//-----------------------------
 		//Output Variable --> Return FinalValue
 		//-----------------------------		

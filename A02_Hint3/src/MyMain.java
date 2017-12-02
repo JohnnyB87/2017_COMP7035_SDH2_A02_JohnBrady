@@ -66,6 +66,10 @@ public class MyMain {
 		resM = ex2.solve(m2, 58);
 		//ex2.displayElements(resM);
 		System.out.println();
+
+		resM = ex2.solve(m2, 18);
+		//ex2.displayElements(resM);
+		System.out.println();
 		
 		System.out.println();		
 		

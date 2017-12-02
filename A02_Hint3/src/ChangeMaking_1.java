@@ -161,17 +161,9 @@ public class ChangeMaking_1 {
 		//-----------------------------
 		//SET OF OPS
 		//-----------------------------
-//		int moneyNeeded = amount - changeGenerated;
-		int cSize = coinValues.length();
-		int index;
-		while((index = getCandidate(changeGenerated,discarded,coinValues)) < cSize && res && discarded.length() < cSize) {
-//			int value = coinValues.getElement(index);
-			if(!isValid(coinValues,amount,changeGenerated,index))
-				discarded.addElement(discarded.length(), coinValues.getElement(index));
-			else
-				res = false;
 
-		}
+		res = discarded.length() == coinValues.length() || changeGenerated == amount;
+
 		//-----------------------------
 		//Output Variable --> Return FinalValue
 		//-----------------------------		
